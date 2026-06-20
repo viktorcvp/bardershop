@@ -1,114 +1,199 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Политика конфиденциальности | Виктор</title>
+    <title>Политика конфиденциальности — VibeCode</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vibe: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        },
+                        glow: {
+                            cyan: '#22d3ee',
+                            pink: '#f472b6',
+                        }
+                    },
+                    boxShadow: {
+                        glow: '0 0 20px rgba(139, 92, 246, 0.5)',
+                    }
+                }
+            }
         }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
+<body class="bg-slate-950 text-slate-100 antialiased mesh-bg">
 
-<body class="bg-slate-950 text-slate-300 antialiased selection:bg-violet-500/30">
-
-    <!-- Header -->
-    <header class="border-b border-white/10 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
-        <div class="max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-white font-bold text-lg hover:text-violet-400 transition">← На главную</a>
-            <span class="text-xs uppercase tracking-widest text-slate-500">Документы</span>
-        </div>
-    </header>
-
-    <!-- Content -->
-    <main class="max-w-3xl mx-auto px-6 py-16 space-y-10">
-
-        <div>
-            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Политика конфиденциальности</h1>
-            <p class="text-sm text-slate-500">Дата последнего обновления: [ДАТА]</p>
-        </div>
-
-        <section class="space-y-4">
-            <h2 class="text-xl font-semibold text-white">1. Общие положения</h2>
-            <p>Настоящая Политика определяет порядок обработки и защиты персональных данных пользователей сайта (далее —
-                Сайт), владельцем которого является Савицкий Виктор (плательщик налога на профессиональный доход,
-                Республика Беларусь).</p>
-            <p>Используя Сайт и отправляя заявки через формы обратной связи, вы подтверждаете согласие с условиями
-                данной Политики.</p>
-        </section>
-
-        <section class="space-y-4">
-            <h2 class="text-xl font-semibold text-white">2. Какие данные мы собираем</h2>
-            <p>Мы собираем минимально необходимый объем данных исключительно для связи с вами и обсуждения проектов:</p>
-            <ul class="list-disc pl-5 space-y-2 marker:text-violet-500">
-                <li><strong>Имя</strong> — для обращения к вам.</li>
-                <li><strong>Контактные данные</strong> (Email или Telegram) — для ответа на заявку.</li>
-                <li><strong>Описание задачи</strong> — для понимания сути вашего запроса.</li>
-            </ul>
-            <p class="bg-white/5 p-4 rounded-lg border border-white/10 text-sm">
-                ⚠️ <strong>Важно:</strong> Мы не используем файлы cookie, системы веб-аналитики (Яндекс.Метрика, Google
-                Analytics) и другие технологии слежения. Сайт является статическим и не хранит ваши данные в базах
-                данных.
-            </p>
-        </section>
-
-        <section class="space-y-4">
-            <h2 class="text-xl font-semibold text-white">3. Как обрабатываются данные</h2>
-            <p>При заполнении формы на Сайте ваши данные передаются напрямую в мессенджер Telegram посредством
-                защищенного соединения. Обработка осуществляется следующим образом:</p>
-            <ul class="list-disc pl-5 space-y-2 marker:text-violet-500">
-                <li>Данные используются только для связи с вами и обсуждения условий сотрудничества.</li>
-                <li>Переписка хранится в вашем и моем аккаунтах Telegram/Email.</li>
-                <li>Данные не передаются третьим лицам, за исключением случаев, предусмотренных законодательством
-                    Республики Беларусь.</li>
-            </ul>
-        </section>
-
-        <section class="space-y-4">
-            <h2 class="text-xl font-semibold text-white">4. Защита данных</h2>
-            <p>Я принимаю необходимые меры для защиты ваших данных от несанкционированного доступа. Передача информации
-                осуществляется по защищенным протоколам HTTPS. Однако, учитывая специфику передачи данных через
-                сторонние сервисы (Telegram), абсолютная гарантия безопасности не может быть предоставлена.</p>
-        </section>
-
-        <section class="space-y-4">
-            <h2 class="text-xl font-semibold text-white">5. Ваши права</h2>
-            <p>Вы имеете право в любой момент:</p>
-            <ul class="list-disc pl-5 space-y-2 marker:text-violet-500">
-                <li>Запросить информацию о том, какие ваши данные у меня есть.</li>
-                <li>Потребовать удалить вашу переписку и контактные данные.</li>
-                <li>Отозвать согласие на обработку данных.</li>
-            </ul>
-            <p>Для реализации этих прав напишите мне в Telegram: <a href="https://t.me/viktorystel"
-                    class="text-violet-400 hover:text-violet-300 underline">@viktorystel</a>.</p>
-        </section>
-
-        <section class="space-y-4">
-            <h2 class="text-xl font-semibold text-white">6. Контакты</h2>
-            <p>По всем вопросам, связанным с обработкой персональных данных, вы можете обратиться ко мне:</p>
-            <div class="bg-white/5 p-6 rounded-lg border border-white/10">
-                <p><strong>Владелец сайта:</strong> Савицкий Виктор</p>
-                <p><strong>Статус:</strong> Плательщик НПД (Республика Беларусь)</p>
-                <p><strong>Telegram:</strong> <a href="https://t.me/viktorystel"
-                        class="text-violet-400 hover:text-violet-300">@viktorystel</a></p>
-                <p><strong>Email:</strong> <a href="mailto:dffggg2013@yandex.by"
-                        class="text-violet-400 hover:text-violet-300">dffggg2013@yandex.by</a></p>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-xl font-bold gradient-text">VibeCode</a>
+                <div class="hidden md:flex gap-8">
+                    <a href="index.html#about" class="nav-link">Обо мне</a>
+                    <a href="index.html#portfolio" class="nav-link">Портфолио</a>
+                    <a href="index.html#process" class="nav-link">Как работаю</a>
+                    <a href="index.html#contact" class="nav-link">Контакты</a>
+                </div>
+                <a href="index.html#contact" class="btn-primary text-xs">
+                    Написать в Telegram
+                </a>
             </div>
-        </section>
+        </div>
+    </nav>
 
-    </main>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 lg:pt-40 lg:pb-28">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Политика конфиденциальности
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto">
+                Как я обрабатываю ваши персональные данные
+            </p>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <section class="section-pad">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="card-glass p-8 sm:p-12 space-y-8">
+                
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">1. Общие положения</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Настоящая политика конфиденциальности регулирует порядок сбора, использования и защиты персональных данных, 
+                        предоставляемых пользователями сайта VibeCode (далее — Сайт).
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">2. Какие данные я собираю</h2>
+                    <p class="text-slate-300 leading-relaxed mb-3">
+                        При использовании формы обратной связи на Сайте вы предоставляете:
+                    </p>
+                    <ul class="space-y-2 text-slate-300 ml-4">
+                        <li class="flex gap-2">
+                            <span class="text-vibe-400">•</span>
+                            <span>Ваше имя (для обращения)</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-vibe-400">•</span>
+                            <span>Email или никнейм в Telegram (для связи)</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-vibe-400">•</span>
+                            <span>Описание задачи ( для понимания ваших требований)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">3. Цели использования данных</h2>
+                    <p class="text-slate-300 leading-relaxed mb-3">
+                        Ваши данные используются исключительно для:
+                    </p>
+                    <ul class="space-y-2 text-slate-300 ml-4">
+                        <li class="flex gap-2">
+                            <span class="text-vibe-400">•</span>
+                            <span>Ответа на ваш запрос в Telegram</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-vibe-400">•</span>
+                            <span>Обсуждения деталей проекта</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-vibe-400">•</span>
+                            <span>Расчета стоимости и сроков</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-vibe-400">•</span>
+                            <span>Проведения работ по вашему заказу</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">4. Хранение и защита данных</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Сайт размещен на GitHub Pages и является статическим. Данные из формы не сохраняются автоматически, 
+                        они передаются вам напрямую через Telegram. Я не передаю ваши данные третьим лицам и не использую их 
+                        для рассылок или маркетинга.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">5. Cookies</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Сайт использует только технические cookies, необходимые для корректной работы страницы. 
+                        Мы не используем файлы cookie для сбора персональной информации или трекинга поведения.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">6. Ваши права</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Вы имеете право запросить удаление ваших данных, полученный вами доступ к информации, 
+                        которую я о вас храню, и изменить ее. Для этого напишите в Telegram 
+                        <a href="https://t.me/viktorystel" class="text-vibe-400 hover:text-vibe-300">@viktorystel</a>.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">7. Изменения в политике</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Я могу обновлять эту политику конфиденциальности. При значимых изменениях 
+                        информация будет доступна на этой странице. Последнее обновление: июнь 2026 года.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 gradient-text">8. Контакты</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        По всем вопросам, связанным с конфиденциальностью и защитой данных, 
+                        обращайтесь в Telegram: <a href="https://t.me/viktorystel" class="text-vibe-400 hover:text-vibe-300">@viktorystel</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="border-t border-white/10 py-8 mt-12">
-        <div class="max-w-3xl mx-auto px-6 text-center text-sm text-slate-500">
-            <p>© 2026 Виктор. Создание сайтов для бизнеса.</p>
+    <footer class="border-t border-white/10 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-sm text-slate-400">
+                © 2026 VibeCode. Вайбкодинг под заказ.
+            </div>
+            <div class="flex gap-6">
+                <a href="privacy.html" class="text-sm text-slate-400 hover:text-white transition">
+                    Политика конфиденциальности
+                </a>
+                <a href="index.html#hero" class="text-sm text-slate-400 hover:text-white transition">
+                    Наверх ↑
+                </a>
+            </div>
         </div>
     </footer>
 
 </body>
-
 </html>
